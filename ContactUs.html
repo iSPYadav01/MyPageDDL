@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <!-- Include Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+3Ic5zTmiqz5F4ynf5i5lC1Cq3TG5B7b9TCf5F3aR5r5l5Nq" crossorigin="anonymous">
+
+    <!-- You can link to an external CSS file or include CSS styles here -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Your existing CSS styles go here */
+
+
+    /* Style for About titles */
+    .contact-title {
+        background-color: #f2f2f2; /* Light gray background */
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    .home-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #2e86de; /* Blue background for button */
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .home-button:hover {
+        background-color: #1c6bd8; /* Darker blue on hover */
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <!-- Navigation with Home button -->
+    <nav>
+        <ul>
+            <li><a href="Main.html" class="home-button"> > Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="map-container">
+            <h2 class="contact-title" style="text-align: center;"> Navigate </h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.56659894943!2d77.46612987486277!3d12.954280230883601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1694007156235!5m2!1sen!2sin" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+       
+        <div class="contact-container">
+            <h2 class="contact-title" style="text-align: center;"> Contact Information </h2>
+            <p class="contact-content">Feel free to get in touch with us using the following contact details:</p>
+            
+            <ul>
+                <li><strong>Email:</strong> info@datadynastylab.com</li>
+                <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+                <li><strong>Address:</strong> Bengaluru, Karnataka, India</li>
+            </ul>
+        
+
+            <h2 class="contact-title" style="text-align: center;"> Contact Form</h2>
+            <p class="contact-content">You can also use the contact form below to send us a message:</p>
+
+            <form action="submit_contact_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>  
+    </div>
+
+    <footer>
+        &copy; 2023 Data Dynasty Lab. All Rights Reserved.
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

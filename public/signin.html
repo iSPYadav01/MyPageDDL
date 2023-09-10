@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <!-- Include Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+3Ic5zTmiqz5F4ynf5i5lC1Cq3TG5B7b9TCf5F3aR5r5l5Nq" crossorigin="anonymous">
+
+    <!-- You can link to an external CSS file or include CSS styles here -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Your existing CSS styles go here */
+
+        /* Style for Sign In container */
+        .signin-container {
+            text-align: center;
+        }
+
+        /* Style for Sign In form */
+        form {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #2e86de;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1c6bd8;
+        }
+
+        .dashboard-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2e86de; /* Blue background for button */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .dashboard-button:hover {
+            background-color: #1c6bd8; /* Darker blue on hover */
+        }
+        nav li {
+            display: flex;  /*display: inline;*/
+            margin-right: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sign In</h1>
+    </header>
+
+    <!-- Navigation with Dashboard button -->
+    <nav>
+        <ul>
+            <li><a href="dashboard.html" class="dashboard-button"> > Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="signin-container">
+            <h2 class="contact-title">Sign In</h2>
+
+            <form id="signin-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+
+                <input type="submit" value="Sign In">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Data Dynasty Lab. All Rights Reserved.
+    </footer>
+
+    <!-- Include your JavaScript file for handling sign-in -->
+    <script src="signin.js"></script>
+</body>
+</html>

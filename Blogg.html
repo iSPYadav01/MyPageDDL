@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloggs & Articles</title>
+    <!-- You can link to an external CSS file or include CSS styles here -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* You can also include inline CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: flex;  /*display: inline;*/
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ccc; /* Gray background for Bloggs & Articles page */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Add this rule to increase the font size for the heading */
+        .container h1 {
+            font-size: 24px; /* You can adjust the size as needed */
+            color: #2e86de; /* Blue text color */
+        }
+
+        /* Styling for blog posts */
+        .blog-post {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for blog post titles */
+        .blog-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        /* Styling for blog post content */
+        .blog-content {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Styling for image */
+        .blog-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Styling for author and date/time */
+        .author-info {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        /* Styling for Read More button */
+        .read-more {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2e86de; /* Blue background for button */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .read-more:hover {
+            background-color: #1c6bd8; /* Darker blue on hover */
+        }
+
+        /* Add this rule to change link color to white */
+        nav a {
+            color: #fff;
+            text-decoration: none; /* Remove underlines from links */
+        }
+        .home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2e86de; /* Blue background for button */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .home-button:hover {
+            background-color: #1c6bd8; /* Darker blue on hover */
+        }
+        
+    </style>
+</head>
+<body>
+    <header >
+        <div class="header-main">   
+            <h2> Blogs & Articles</h2>   
+        </div>
+
+        <div class="header-sub-main">   
+            <h4  style="text-align: center;"> Expend The Knowledge with Trending Technology !</h4> 
+            <h5  style="text-align: center;"> Share Your Own Thoughts With The World Sign Up Now And Start Writing...</h5> 
+        </div>
+         
+    </header>
+
+
+    <!-- Navigation with Home button -->
+    <nav>
+        <ul>
+            <li><a href="Main.html" class="home-button"> > Home</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <h2 class="blog-title">The Power of Data Visualization</h2>
+            <p class="author-info">Author: S. Pratap Yadav | Published on: September 6, 2023, 10:00 AM</p>
+            <img src="images\blogs\image1.jpg" alt="Data Visualization" class="blog-image">
+            <p class="blog-content">Data visualization is a crucial tool for understanding complex data sets. In this article, we explore the benefits and best practices of data visualization.</p>
+            <a href="article1.html" class="read-more">Read More</a>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+            <h2 class="blog-title">Machine Learning Demystified</h2>
+            <p class="author-info">Author: S. Pratap Yadav | Published on: September 6, 2023, 11:00 AM</p>
+            <img src="images\blogs\image2.jpg" alt="Machine Learning" class="blog-image">
+            <p class="blog-content">Machine learning is transforming industries. Learn the fundamentals and key concepts behind machine learning in this comprehensive guide.</p>
+            <a href="article2.html" class="read-more">Read More</a>
+        </div>
+
+        <!-- Add more blog posts here -->
+
+    </div>
+
+    <footer>
+        &copy; 2023 Data Dynasty Lab. All Rights Reserved.
+    </footer>
+</body>
+</html>

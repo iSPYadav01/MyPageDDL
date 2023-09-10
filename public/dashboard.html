@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+
+    <!-- Include any CSS stylesheets or external libraries here -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* You can include additional inline CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: flex;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; /* White background for the dashboard */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .home-button {
+            display:inline-block;
+            padding: 10px 20px;
+            background-color: #2e86de; /* Blue background for button */
+            color: #fff;
+
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .home-button:hover {
+            background-color: #1c6bd8; /* Darker blue on hover */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Dashboard</h1>
+    </header>
+
+    <!-- Navigation with Home button -->
+    <nav>
+        <ul>
+            <li style="text-align:left;"><a href="../Main.html" class="home-button"> > Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Your dashboard content goes here -->
+        <h2>Welcome to Your Dashboard</h2>
+        <p>This is the user dashboard where you can access your personalized content and settings.</p>
+        <div>
+            <a href="signup.html"><button>Sign Up</button></a>
+            <a href="signin.html"><button>Sign In</button></a>
+        </div>
+
+        <!-- You can add more content, widgets, and features here -->
+
+    </div>
+
+    <footer>
+        &copy; 2023 Data Dynasty Lab. All Rights Reserved.
+    </footer>
+</body>
+</html>

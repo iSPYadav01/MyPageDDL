@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <!-- Include Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+3Ic5zTmiqz5F4ynf5i5lC1Cq3TG5B7b9TCf5F3aR5r5l5Nq" crossorigin="anonymous">
+
+    <!-- You can link to an external CSS file or include CSS styles here -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Your existing CSS styles go here */
+
+        /* Style for Sign Up container */
+        .signup-container {
+            text-align: center;
+        }
+
+        /* Style for Sign Up form */
+        form {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #2e86de;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1c6bd8;
+        }
+
+        .dashboard-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2e86de; /* Blue background for button */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .dashboard-button:hover {
+            background-color: #1c6bd8; /* Darker blue on hover */
+        }
+
+        nav li {
+            display: flex;  /*display: inline;*/
+            margin-right: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sign Up</h1>
+    </header>
+
+    <!-- Navigation with Dashboard button -->
+    <nav>
+        <ul>
+            <li><a href="dashboard.html" class="dashboard-button"> > Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="signup-container">
+            <h2 class="contact-title">Sign Up</h2>
+
+            <form id="signup-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+
+                <label for="profession">Profession:</label>
+                <input type="text" id="profession" name="profession" required><br>
+
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" name="job-title" required><br>
+
+                <label for="organization">Organization:</label>
+                <input type="text" id="organization" name="organization" required><br>
+
+                <label for="purpose">Purpose:</label>
+                <textarea id="purpose" name="purpose" rows="4" required></textarea><br>
+
+                <label for="education">Education:</label>
+                <input type="text" id="education" name="education" required><br>
+
+                <label for="current-city">Current City:</label>
+                <input type="text" id="current-city" name="current-city" required><br>
+
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>  
+    </div>
+
+    <footer>
+        &copy; 2023 Data Dynasty Lab. All Rights Reserved.
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Include your JavaScript file for handling sign-up -->
+    <script src="signup.js"></script>
+</body>
+</html>

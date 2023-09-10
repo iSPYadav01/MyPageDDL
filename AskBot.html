@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Bot</title>
+    <!-- You can link to an external CSS file or include CSS styles here -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* You can also include inline CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: flex; /*display: inline;*/
+            margin-right: 20px;
+        }
+
+        nav li2 {
+            display: inline-flex; /*display: inline;*/
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ccc; /* Gray background for Ask Bot page */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Add this rule to increase the font size for the heading */
+        .container h1 {
+            font-size: 24px; /* You can adjust the size as needed */
+            color: #2e86de; /* Blue text color */
+        }
+
+        /* Add this rule to change link color to white */
+        nav a {
+            color: #fff;
+            text-decoration: none; /* Remove underlines from links */
+        }
+
+        /* Add CSS styles for the button */
+        .home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2e86de; /* Blue background for button */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .home-button:hover {
+            background-color: #1c6bd8; /* Darker blue on hover */
+        }
+
+        /* Styling for the chat section */
+        .chat-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for the chat messages */
+        .chat-message {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        /* Add CSS styles for the button */
+        .datadynasty-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2e86de; /* Blue background for button */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .datadynasty-button:hover {
+            background-color: #1c6bd8; /* Darker blue on hover */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ask Bot</h1>
+    </header>
+
+    <!-- Navigation with Home button -->
+    <nav>
+        <ul>
+            <li><a href="Main.html" class="home-button"> > Home</a></li>
+        </ul>
+    </nav>
+
+     <!-- Add Data Dynasty Lab button -->
+     <nav>
+        <ul>
+            <li2><a href="DataDynastyLab.html" class="datadynasty-button"> > Data Dynasty Lab</a></li2>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Chat Section -->
+        <div class="chat-section">
+            <h2>Chat with Bot</h2>
+            <p>Got questions? Chat with our helpful virtual assistant, Bot. Bot is here to assist you with any inquiries you may have.</p>
+
+            <!-- Chat Messages (Example) -->
+            <div class="chat-message">
+                <p><strong>User:</strong> Hi Bot, can you help me with data analysis?</p>
+            </div>
+
+            <div class="chat-message">
+                <p><strong>Bot:</strong> Of course! I can provide guidance on data analysis techniques. What specific questions do you have?</p>
+            </div>
+
+            <!-- Add more chat messages here -->
+
+            <!-- Chat Input Form (Example) -->
+            <form>
+                <input type="text" placeholder="Type your message...">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <!-- Your question and advice section goes here -->
+        <h2>Your Questions and Advice</h2>
+        <p>Feel free to ask any questions related to data analysis, and our experts will provide you with valuable advice and solutions.</p>
+    </div>
+
+    <footer>
+        &copy; 2023 Data Dynasty Lab. All Rights Reserved.
+    </footer>
+</body>
+</html>
